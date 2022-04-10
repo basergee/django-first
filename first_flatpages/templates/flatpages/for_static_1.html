@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ flatpage.title }}</title>
-</head>
-<body>
-    <h1>Здесь размещен контент страницы:</h1>
-    <p>{{ flatpage.content }}</p>
-    <p>{{ flatpage.content }}</p>
-</body>
-</html>
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+<p>{{flatpage.content}}</p>
+<p>{{flatpage.content}}</p>
+{% endblock content %}
